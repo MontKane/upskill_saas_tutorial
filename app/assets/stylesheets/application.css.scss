@@ -18,7 +18,7 @@
  @import 'bootstrap';
 
 h1, h2, h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; //Using Google's custom Open Sans for primary font for h1-3
 }
 
 .navbar, .home-callout {
@@ -29,29 +29,24 @@ h1, h2, h3 {
     //Gradient Provided by https://twitter.com/_ighosh at uiGradients.com ^^
 }
 
-.navbar{
-    border: none;
-}
+.navbar{border: none;} //Removes Navigation Bar's border
 
-.navbar-default .navbar-brand{
+.navbar-default .navbar-brand{ //Makes our logo black and when you hover (&:hover), it will lighten up a little
     color: black;
+    &:hover{
+        color:black;
+        opacity:0.75;
+    }
 }
 
-.navbar-default .navbar-nav > li > a{
-    color: white;
-}
+.navbar-default .navbar-nav > li > a {color: white;} //Makes the about nav button white
 
-.navbar-default .navbar-nav > li > a:hover{
+.navbar-default .navbar-nav > li > a:hover{ //When you hover over the about button it will be white
     color: white;
     opacity:0.75;
 }
 
-.navbar-default .navbar-brand:hover{
-    color:black;
-    opacity:0.75;
-}
-
-.home-callout{
+.home-callout{ //This is our main text on the home page. Makes it white, with shadow, extra margin to remove whitespace
     color: white;
     text-shadow: 2px 2px 4px #000000;
     margin-top: -20px;
