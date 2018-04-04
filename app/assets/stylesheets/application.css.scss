@@ -24,22 +24,24 @@ h1, h2, h3 {
 }
 
 //NavStyles
-.navbar, .home-callout {
-    //Gradient Provided by https://twitter.com/_ighosh at uiGradients.com vv
-    background: #1c92d2;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    //Gradient Provided by https://twitter.com/_ighosh at uiGradients.com ^^
+.navbar, .home-callout { //GRADIENT
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0d0907+0,373769+100 */
+    background: #0d0907; /* Old browsers */
+    background: -moz-linear-gradient(left, #0d0907 0%, #373769 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0d0907 0%,#373769 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #0d0907 0%,#373769 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0d0907', endColorstr='#373769',GradientType=1 ); /* IE6-9 */
 }
 
 .navbar{border: none;} //Removes Navigation Bar's border
 
-.navbar-default .navbar-brand{ //Makes our logo black and when you hover (&:hover), it will lighten up a little
+.navbar-default .navbar-brand{ //Makes our logo white and when you hover (&:hover), it will lighten up a little
    font-family: 'Open Sans', sans-serif;
    font-weight: 800;
-    color: black;
+    color: white;
     &:hover{
-        color:black;
+        color:white;
         opacity:0.75;
     }
 }
@@ -59,10 +61,12 @@ h1, h2, h3 {
     padding-bottom: 100px;
 }
 
+//Mobile Navbar settings vv
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
-.navbar-default .navbar-toggle {
+
+.navbar-default .navbar-toggle { 
   border: 2px solid white;
   &:hover, &:focus {
     background-color: #00c6ff;
