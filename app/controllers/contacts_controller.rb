@@ -14,7 +14,7 @@ class ContactsController < ApplicationController
             flash[:success] = "Message sent."
             redirect_to new_contact_path
         elsif params[:contact][:email] !~ /@/
-                flash[:danger] = "Please include atleast an @ symbol in email field"
+                flash[:danger] = "Please enter a valid email address"
                 redirect_to new_contact_path
         else
             flash[:danger] = @contact.errors.full_messages.join(", ")
