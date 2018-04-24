@@ -7,15 +7,19 @@ Memberships
 
 Stripe Integration
 
-* Users should have a stripe customer token in the users table.
+(Add to database)
+*[check] Users should have a stripe customer token in the users table.
 
+(Hijack button)
 * Javascript should prevent Pro form from submitting, when user fills it out,
 and should send card info to Stripe. Stripe will return with a card token.
 
+(Get card token, remove card fields and validate data. Note: plan)
 * Javascript should take card token and user fields, and omit card fields,
 and submit that to our Rails app. Rails app should validate the user fields.
 Rails app will note whether plan 1 or plan 2.
 
+(Send email&plan id to stripe, get customer token, save token and user info)
 * Once Validated, Rails should send user info (email, plan id) and card token
 to stripe server and Stripe will create a subscription and send back
 customer token. Rails should save customer token and user info to our
