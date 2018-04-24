@@ -15,6 +15,7 @@ Stripe Integration
 and should send card info to Stripe. Stripe will return with a card token.
 
 (Get card token, remove card fields and validate data. Note: plan)
+[check: Rails notes whether plan 1 or 2]
 * Javascript should take card token and user fields, and omit card fields,
 and submit that to our Rails app. Rails app should validate the user fields.
 Rails app will note whether plan 1 or plan 2.
